@@ -2735,6 +2735,151 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:AO3400A"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -3446,6 +3591,12 @@
 		(uuid "77aa3959-cd2b-499c-9be6-29ade3c1321d")
 	)
 	(junction
+		(at 152.4 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cfb103a-b483-42f8-839c-bda20167c161")
+	)
+	(junction
 		(at 242.57 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4119,6 +4270,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 109.22) (xy 152.4 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cde3075-f72f-48a6-8bab-b5cb443f21d7")
+	)
+	(wire
+		(pts
 			(xy 242.57 114.3) (xy 242.57 115.57)
 		)
 		(stroke
@@ -4169,7 +4330,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 109.22) (xy 142.24 109.22)
+			(xy 140.97 109.22) (xy 152.4 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4466,6 +4627,16 @@
 			(type default)
 		)
 		(uuid "b4a92dd2-7440-4092-9b00-5ef9be632e80")
+	)
+	(wire
+		(pts
+			(xy 152.4 109.22) (xy 156.21 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8f76545-569a-44be-83de-517d7b82ceb8")
 	)
 	(wire
 		(pts
@@ -5047,7 +5218,7 @@
 	)
 	(global_label "BOOT"
 		(shape input)
-		(at 142.24 109.22 0)
+		(at 156.21 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5057,7 +5228,7 @@
 		)
 		(uuid "7454ef07-15cd-4ee2-8f9b-86cc1f14f145")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.1238 109.22 0)
+			(at 164.0938 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5566,6 +5737,94 @@
 			(project ""
 				(path "/2bcf36d7-c0ba-4c16-848a-400e98718055"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 152.4 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06c6b8bf-7bd9-48c2-b777-ef8258d4ec03")
+		(property "Reference" "SW1"
+			(at 156.21 114.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW1_BOOT"
+			(at 156.21 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+			(at 157.48 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 152.4 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C318884"
+			(at 152.4 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Catalogue" "https://jlcpcb.com/partdetail/XkbConnection-TS_1187A_B_AB/C318884"
+			(at 152.4 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a602c7d-1930-455d-aeeb-a80d46957822")
+		)
+		(pin "1"
+			(uuid "a92ef43d-2b7d-47d6-ba17-76425bbd679b")
+		)
+		(instances
+			(project ""
+				(path "/2bcf36d7-c0ba-4c16-848a-400e98718055"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8378,6 +8637,72 @@
 			(project "DCWiFiSwitch"
 				(path "/2bcf36d7-c0ba-4c16-848a-400e98718055"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7af8127f-4131-4226-8e05-51a218962370")
+		(property "Reference" "#PWR027"
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32ad67bd-6e9d-4e73-9816-736978adc7fa")
+		)
+		(instances
+			(project "DCWiFiSwitch"
+				(path "/2bcf36d7-c0ba-4c16-848a-400e98718055"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
