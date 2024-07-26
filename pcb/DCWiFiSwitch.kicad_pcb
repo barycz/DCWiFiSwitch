@@ -3254,7 +3254,7 @@
 		(path "/a4da1a52-1d81-408a-a0c6-0d3ad29f12ba")
 		(sheetname "Root")
 		(sheetfile "DCWiFiSwitch.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.602064 0.91)
 			(end 0.602064 0.91)
@@ -3467,7 +3467,7 @@
 		(path "/f2f3ae06-f2da-4f5d-b16c-ea966840a8de")
 		(sheetname "Root")
 		(sheetfile "DCWiFiSwitch.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 28 -5.261)
 			(end 28 4.66)
@@ -4812,7 +4812,7 @@
 		(path "/406f9073-8885-4d61-a1cb-ee1ac0554883")
 		(sheetname "Root")
 		(sheetfile "DCWiFiSwitch.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 8.12 -12.12)
 			(end 8.12 -4.5)
@@ -6136,7 +6136,7 @@
 		(path "/94321c39-46ed-44d0-aa6b-2c2e3bd78b08")
 		(sheetname "Root")
 		(sheetfile "DCWiFiSwitch.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.602064 0.91)
 			(end 0.602064 0.91)
@@ -8555,7 +8555,7 @@
 		(descr "SMD Tactile Switch, http://www.helloxkb.com/public/images/pdf/TS-1187A-X-X-X.pdf")
 		(tags "SPST Tactile Switch")
 		(property "Reference" "SW1"
-			(at 0 -3.5 360)
+			(at 0 -3.5 0)
 			(layer "F.SilkS")
 			(uuid "e6c5380d-8d99-4d9c-8a5a-d39334bc6c48")
 			(effects
@@ -8566,7 +8566,7 @@
 			)
 		)
 		(property "Value" "SW1_BOOT"
-			(at 0 3.75 360)
+			(at 0 3.75 0)
 			(layer "F.Fab")
 			(uuid "a5f48bbf-d790-40cc-b234-c1104c6a90bb")
 			(effects
@@ -9013,7 +9013,7 @@
 			(uuid "8b73730b-5f23-4ae8-8c24-71f2e362318d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -3.75 360)
+			(at 0 -3.75 0)
 			(layer "F.Fab")
 			(uuid "f7d635ef-3da9-478f-b55f-c73f0514c105")
 			(effects
@@ -9142,7 +9142,7 @@
 		(path "/5cd8cf11-b613-49af-9a3b-98cf414365d3")
 		(sheetname "Root")
 		(sheetfile "DCWiFiSwitch.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -11802,7 +11802,7 @@
 		(path "/541074ea-ff61-441d-95ad-f8d97bf15403")
 		(sheetname "Root")
 		(sheetfile "DCWiFiSwitch.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.602064 0.91)
 			(end 0.602064 0.91)
